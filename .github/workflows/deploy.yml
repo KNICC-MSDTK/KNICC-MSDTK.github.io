@@ -1,10 +1,5 @@
 name: Deploy website to GitHub Pages
 
-permissions:
-  contents: write
-  pages: write
-  id-token: write
-
 on:
   # Trigger the workflow every time you push to the `main` branch
   push:
