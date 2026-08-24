@@ -1,27 +1,38 @@
 # Navigation Links
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
-  #     desired widget in your `content/home/` folder.
-  #   The weight parameter defines the order that the links will appear in.
+#     desired widget in your `content/home/` folder.
+#   The weight parameter defines the order that the links will appear in.
+#   `identifier` / `parent` create a dropdown submenu (standard Hugo menu nesting).
 
 main:
-  - name: Bio
+  - name: 소개
     url: /
     weight: 10
-  - name: Papers
-    url: /#papers
-    weight: 11
-  - name: Talks
-    url: /#talks
-    weight: 12
-  - name: News
-    url: /#news
-    weight: 13
-  - name: Experience
-    url: experience/
+  - name: 연구분야
+    url: /#research
     weight: 20
-  - name: Projects
-    url: projects/
+  - name: 구성원
+    identifier: members
+    url: /researchers/
     weight: 30
-  - name: Courses
-    url: courses/
+  - name: Researchers
+    url: /researchers/
+    parent: members
+    weight: 31
+  - name: Students
+    url: /students/
+    parent: members
+    weight: 32
+  - name: Alumni
+    url: /alumni/
+    parent: members
+    weight: 33
+  - name: 프로젝트
+    url: projects/
     weight: 40
+  - name: 발간물
+    url: publications/
+    weight: 50
+  - name: 문의
+    url: /#contact
+    weight: 60

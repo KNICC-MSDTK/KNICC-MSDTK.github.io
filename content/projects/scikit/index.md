@@ -1,15 +1,11 @@
 ---
-title: scikit-learn
-date: 2023-10-26
-links:
-  - type: site
-    url: https://github.com/scikit-learn/scikit-learn
+title: 조선 생산공정 디지털트윈 플랫폼 구축
+date: 2025-10-01
 tags:
-  - Hugo
-  - HugoBlox
-  - Markdown
+  - Digital Twin
+  - Smart Manufacturing
 ---
 
-scikit-learn is a Python module for machine learning built on top of SciPy and is distributed under the 3-Clause BSD license.
+제조 설비와 생산 시스템을 가상 공간에 재현해 실시간으로 상태를 동기화하는 디지털트윈 플랫폼을 개발하는 프로젝트입니다. (예시 프로젝트 — 실제 프로젝트명·기간·협력사 정보로 교체 필요)
 
 <!--more-->

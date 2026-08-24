@@ -1,15 +1,11 @@
 ---
-title: Pandas
-date: 2023-10-26
-links:
-  - type: site
-    url: https://github.com/pandas-dev/pandas
+title: 공정 M&S 기반 생산라인 사전 검증
+date: 2025-07-01
 tags:
-  - Hugo
-  - HugoBlox
-  - Markdown
+  - Modeling & Simulation
+  - Process Verification
 ---
 
-Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.
+물리 기반 모델링과 시뮬레이션으로 생산라인을 사전에 검증하고 설계·운영을 최적화하는 프로젝트입니다. (예시 프로젝트 — 실제 프로젝트명·기간·협력사 정보로 교체 필요)
 
 <!--more-->

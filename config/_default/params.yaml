@@ -13,16 +13,15 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   identity:
     # Site name - shown in navbar, footer, copyright, and browser title by default
-    name: "Your Name"
+    name: "KNICC-MSDTK"
     # Legal entity for copyright notices (defaults to name if not set)
-    organization: ""
+    organization: "한국생산기술연구원(KITECH)"
     # Schema.org type for structured data
-    type: person # person | organization | local_business
+    type: organization # person | organization | local_business
     # Short tagline displayed on your site
-    tagline: ""
+    tagline: "M&S and DT Research Center of KITECH"
     # Site meta description for search engines and social sharing
-    description: "The highly-customizable Hugo Academic theme powered by HugoBlox
-      Kit. Easily create your personal academic website."
+    description: "KNICC-MSDTK는 한국생산기술연구원(KITECH) 소속으로, 모델링·시뮬레이션(M&S)과 디지털트윈 기술을 중심으로 제조 현장의 문제를 해결하는 연구센터입니다."
     # Social accounts (used for meta tags like Twitter Cards)
     social:
       twitter: "GoOwnable" # Twitter/X handle for Twitter Cards (without @)

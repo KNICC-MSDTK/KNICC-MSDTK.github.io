@@ -1,5 +1,5 @@
 ---
-title: "An example journal article"
+title: "[1] An example journal article"
 authors:
 - me
 - Robert Ford

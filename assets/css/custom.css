@@ -1,0 +1,19 @@
+/* KNICC-MSDTK custom overrides */
+
+/* Publications 페이지 제목 크기 줄이기.
+   실제 클래스명이 사이트마다 다를 수 있어, 우선 h1 태그 자체를 겨냥했습니다.
+   만약 이 CSS를 적용해도 크기가 안 바뀐다면:
+   1. 브라우저에서 F12(개발자 도구) 열기
+   2. "Publications" 제목 글자를 우클릭 → 검사(Inspect)
+   3. 거기 나오는 class="..." 값을 아래 h1 대신 그 class로 바꿔서 다시 시도
+*/
+main h1 {
+  font-size: 2.75rem !important;
+  line-height: 1.15 !important;
+}
+
+@media (min-width: 768px) {
+  main h1 {
+    font-size: 3.25rem !important;
+  }
+}

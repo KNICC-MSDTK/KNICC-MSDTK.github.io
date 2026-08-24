@@ -1,127 +1,105 @@
 ---
-# Leave the homepage title empty to use the site title
 title: ''
 summary: ''
-date: 2022-10-24
+date: 2026-08-23
 type: landing
 
 sections:
-  - block: resume-biography-3
+  - block: hero
     content:
-      # Choose a user profile to display (a folder name within `content/authors/`)
-      username: me
-      text: ''
-      # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download CV
-        url: uploads/resume.pdf
-      headings:
-        about: ''
-        education: ''
-        interests: ''
+      title: KNICC-MSDTK
+      text: |-
+        M&S and DT Research Center of KITECH
+
+        가상과 현실을 잇는 모델링·시뮬레이션(M&S)으로, 산업 현장의 디지털트윈을 만듭니다.
+        한국생산기술연구원(KITECH) 소속 연구센터로서, 제조 공정과 설비를 가상 공간에 재현하여
+        예측·최적화·검증이 가능한 기술을 연구합니다.
+      primary_action:
+        text: 연구분야 보기
+        url: '#research'
+      secondary_action:
+        text: 구성원 보기
+        url: '#people'
     design:
-      # Use the new Gradient Mesh which automatically adapts to the selected theme colors
       background:
         gradient_mesh:
           enable: true
-
-      # Name heading sizing to accommodate long or short names
       name:
-        size: md # Options: xs, sm, md, lg (default), xl
-
-      # Avatar customization
+        size: md
       avatar:
-        size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
-        shape: circle # Options: circle (default), square, rounded
+        size: medium
+        shape: circle
+
   - block: markdown
+    id: about
     content:
-      title: '📚 My Research'
+      title: 📌 센터 소개
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+        KNICC-MSDTK(M&S and DT Research Center of KITECH)는 모델링·시뮬레이션(M&S) 기술을 기반으로
+        물리 세계와 가상 세계를 정교하게 연결하는 디지털트윈을 연구합니다. 제조 공정, 설비, 생산
+        시스템을 가상 공간에 재현하여 예측·최적화·검증이 가능한 기술을 개발합니다.
 
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
-
-        Please reach out to collaborate 😃
+        나아가 사이버물리시스템(CPS), 실시간 데이터 연동, 스마트 제조로 연구 영역을 확장하여
+        조선·기계·에너지 등 다양한 산업 분야에 실질적으로 적용 가능한 디지털트윈 기술을 연구합니다.
     design:
       columns: '1'
-  - block: collection
-    id: papers
+
+  - block: features
+    id: research
     content:
-      title: Featured Publications
+      title: 🔬 핵심 연구 분야
+      subtitle: ''
+      items:
+        - name: 모델링 & 시뮬레이션
+          icon: cog
+          description: 공정·설비의 물리 기반 모델링과 시뮬레이션으로 설계·운영을 사전에 검증하고 최적화합니다.
+        - name: 디지털트윈
+          icon: cube
+          description: 제조 설비와 생산 시스템을 가상 공간에 재현해 실시간으로 상태를 동기화하는 플랫폼을 개발합니다.
+        - name: 사이버물리시스템(CPS)
+          icon: cpu-chip
+          description: 센서·제어 데이터를 실시간으로 연동해 물리 시스템과 가상 모델이 함께 동작하는 환경을 구축합니다.
+    design:
+      columns: 3
+
+  - block: markdown
+    id: people
+    content:
+      title: 👥 구성원
+      subtitle: ''
+      text: |-
+        디지털트윈·M&S·CPS 연구를 이끄는 연구진을 소개합니다.
+
+        <a href="/researchers/" style="display:inline-block; margin-top:12px; padding:10px 22px; background:#c98a3e; color:#171106; border-radius:4px; font-weight:600; text-decoration:none;">구성원 보기 →</a>
+    design:
+      columns: '1'
+
+  - block: collection
+    id: projects
+    content:
+      title: 🗂️ 프로젝트
+      text: ''
       filters:
         folders:
-          - publications
-        featured_only: true
+          - projects
     design:
       view: article-grid
-      columns: 2
-  - block: collection
-    content:
-      title: Recent Publications
-      text: ''
-      filters:
-        folders:
-          - publications
-        exclude_featured: false
-    design:
-      view: citation
-  - block: collection
-    id: talks
-    content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - events
-    design:
-      view: card
-  - block: collection
-    id: news
-    content:
-      title: Recent News
-      subtitle: ''
-      text: ''
-      # Page type to display. E.g. post, talk, publication...
-      page_type: blog
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 10
-      # Filter on criteria
-      filters:
-        author: ''
-        category: ''
-        tag: ''
-        exclude_featured: false
-        exclude_future: false
-        exclude_past: false
-        publication_type: ''
-      # Choose how many pages you would like to offset by
-      offset: 0
-      # Page order: descending (desc) or ascending (asc) date.
-      order: desc
-    design:
-      # Choose a layout view
-      view: card
-      # Reduce spacing
-      spacing:
-        padding: [0, 0, 0, 0]
+      columns: 3
+
   - block: cta-card
-    demo: true # Only display this section in the HugoBlox Kit demo site
+    id: contact
     content:
-      title: 👉 Build your own academic website like this
+      title: 📬 문의
       text: |-
-        This site is generated by HugoBlox Kit - the FREE, Hugo-based open source website builder trusted by 250,000+ academics like you.
+        협력 및 채용 문의는 아래 이메일로 연락해 주세요.
 
-        <a class="github-button" href="https://github.com/HugoBlox/kit" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star HugoBlox/kit on GitHub">Star</a>
-
-        Easily build anything with blocks - no-code required!
-
-        From landing pages, second brains, and courses to academic resumés, conferences, and tech blogs.
+        msdtk@kitech.re.kr
       button:
-        text: Get Started
-        url: https://hugoblox.com/templates/
+        text: 이메일 보내기
+        url: mailto:msdtk@kitech.re.kr
     design:
       card:
-        # Card background color (CSS class)
         css_class: 'bg-gradient-to-br from-primary-500 via-primary-600 to-secondary-600 text-white shadow-2xl'
         css_style: ''
 ---

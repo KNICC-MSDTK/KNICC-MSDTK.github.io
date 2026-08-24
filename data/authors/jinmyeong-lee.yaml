@@ -1,0 +1,17 @@
+schema: hugoblox/author/v1
+slug: jinmyeong-lee
+is_owner: false
+name:
+  display: 이진명
+  given: 진명
+  family: 이
+role: 기술원
+weight: 2
+
+affiliations:
+  - name: 한국생산기술연구원(KITECH) - KNICC-MSDTK
+    url: ''
+
+interests:
+  - 신호처리시스템
+  - 제조 AI

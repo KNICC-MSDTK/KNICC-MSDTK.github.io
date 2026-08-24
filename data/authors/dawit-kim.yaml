@@ -1,0 +1,17 @@
+schema: hugoblox/author/v1
+slug: dawit-kim
+is_owner: false
+name:
+  display: 김다윗
+  given: 다윗
+  family: 김
+role: 연구원
+weight: 3
+
+affiliations:
+  - name: 한국생산기술연구원(KITECH) - KNICC-MSDTK
+    url: ''
+
+interests:
+  - DT 시뮬레이션 기반 최적화
+  - 제조 AI
