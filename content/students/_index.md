@@ -8,6 +8,7 @@ sections:
     content:
       title: Students
       text: ''
+      count: 500
       filters:
         folders:
           - students

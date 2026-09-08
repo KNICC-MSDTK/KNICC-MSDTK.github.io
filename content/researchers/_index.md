@@ -8,6 +8,7 @@ sections:
     content:
       title: Researchers
       text: ''
+      count: 500
       filters:
         folders:
           - researchers

@@ -19,7 +19,7 @@ sections:
         url: '#research'
       secondary_action:
         text: 구성원 보기
-        url: '#people'
+        url: '/researchers/'
     design:
       background:
         gradient_mesh:
@@ -64,42 +64,26 @@ sections:
       columns: 3
 
   - block: markdown
-    id: people
+    id: location
     content:
-      title: 👥 구성원
+      title: 📍 오시는 길
       subtitle: ''
       text: |-
-        디지털트윈·M&S·CPS 연구를 이끄는 연구진을 소개합니다.
-
-        <a href="/researchers/" style="display:inline-block; margin-top:12px; padding:10px 22px; background:#c98a3e; color:#171106; border-radius:4px; font-weight:600; text-decoration:none;">구성원 보기 →</a>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:start; margin-top:16px;">
+          <div style="border-radius:8px; overflow:hidden; border:1px solid #ddd; min-height:340px;">
+            <iframe
+              src="https://www.google.com/maps?q=%EA%B2%BD%EA%B8%B0%EB%8F%84%20%EC%95%88%EC%82%B0%EC%8B%9C%20%EC%83%81%EB%A1%9D%EA%B5%AC%20%ED%95%AD%EA%B0%80%EC%9A%B8%EB%A1%9C%20143&output=embed"
+              width="100%" height="340" style="border:0; display:block;" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+          <div>
+            <h3 style="margin-top:0;">Address</h3>
+            <p>경기도 안산시 상록구 항가울로 143<br>KNICC-MSDTK (M&amp;S and DT Research Center of KITECH)</p>
+            <h3>Contact</h3>
+            <p>msdtk@kitech.re.kr</p>
+          </div>
+        </div>
     design:
       columns: '1'
-
-  - block: collection
-    id: projects
-    content:
-      title: 🗂️ 프로젝트
-      text: ''
-      filters:
-        folders:
-          - projects
-    design:
-      view: article-grid
-      columns: 3
-
-  - block: cta-card
-    id: contact
-    content:
-      title: 📬 문의
-      text: |-
-        협력 및 채용 문의는 아래 이메일로 연락해 주세요.
-
-        msdtk@kitech.re.kr
-      button:
-        text: 이메일 보내기
-        url: mailto:msdtk@kitech.re.kr
-    design:
-      card:
-        css_class: 'bg-gradient-to-br from-primary-500 via-primary-600 to-secondary-600 text-white shadow-2xl'
-        css_style: ''
 ---

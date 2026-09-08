@@ -5,34 +5,40 @@
 #   `identifier` / `parent` create a dropdown submenu (standard Hugo menu nesting).
 
 main:
-  - name: 소개
+  - name: HOME
     url: /
     weight: 10
-  - name: 연구분야
-    url: /#research
-    weight: 20
-  - name: 구성원
+  - name: PEOPLE
     identifier: members
     url: /researchers/
-    weight: 30
+    weight: 20
   - name: Researchers
     url: /researchers/
     parent: members
-    weight: 31
+    weight: 21
   - name: Students
     url: /students/
     parent: members
-    weight: 32
+    weight: 22
   - name: Alumni
     url: /alumni/
     parent: members
-    weight: 33
-  - name: 프로젝트
-    url: projects/
-    weight: 40
-  - name: 발간물
+    weight: 23
+  - name: RESEARCH
+    identifier: projects
+    url: /projects-current/
+    weight: 30
+  - name: Current Projects
+    url: /projects-current/
+    parent: projects
+    weight: 31
+  - name: Completed Projects
+    url: /projects-completed/
+    parent: projects
+    weight: 32
+  - name: PUBLICATIONS
     url: publications/
+    weight: 40
+  - name: NEWS
+    url: /news/
     weight: 50
-  - name: 문의
-    url: /#contact
-    weight: 60

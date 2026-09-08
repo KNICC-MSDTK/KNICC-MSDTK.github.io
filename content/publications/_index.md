@@ -9,6 +9,7 @@ sections:
     content:
       title: Publications
       text: ''
+      count: 500
       filters:
         folders:
           - publications
@@ -23,6 +24,7 @@ sections:
     content:
       title: Conference
       text: ''
+      count: 500
       filters:
         folders:
           - conferences
